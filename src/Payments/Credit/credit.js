@@ -2,7 +2,7 @@
 
 var cybersourceRestApi = require('cybersource-rest-client');
 var path = require('path');
-var filePath = path.resolve('Data/Configuration.js');
+var filePath = path.resolve('./src/Data/AlternativeConfiguration.js');
 var configuration = require(filePath);
 
 function credit(callback) {
@@ -70,4 +70,8 @@ if (require.main === module) {
 		console.log('\nCreateCredit end.');
 	});
 }
-module.exports.credit = credit;
+//module.exports.credit = credit;
+
+module.exports = function (callback) {
+	credit(callback);
+};

@@ -19,6 +19,21 @@
             "date": 1661342733250,
             "name": "log\\cybs-2022-08-24.log",
             "hash": "4a710ac8d227909ec62d46dd10b913c6663a361620b7ad5a46b98e42fa95ada3"
+        },
+        {
+            "date": 1661520130713,
+            "name": "log\\cybs-2022-08-26.log",
+            "hash": "afcba8613a437ea9f1faf1125233ee012d147d884e991cd8e85e6d8acb4a190a"
+        },
+        {
+            "date": 1661732462194,
+            "name": "log\\cybs-2022-08-28.log",
+            "hash": "349df12fb9bd694fafb1cee6c4219bab3652460ae9775b40e4047d8efbcbf0a6"
+        },
+        {
+            "date": 1661881181960,
+            "name": "log\\cybs-2022-08-30.log",
+            "hash": "42507ecfc291dd6087600018c19fb46acd52c4d5d50b7da0a2d24e3b2e77b511"
         }
     ],
     "hashType": "sha256"

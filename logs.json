@@ -1,0 +1,27 @@
+//authorization_with_capturesale
+Response Code of Process a Payment : 201
+[
+  exports {
+    _links: exports { self: [exports] },
+    id: '6618828829466685704953',
+    submitTimeUtc: '2022-08-30T18:08:03Z',
+    status: 'AUTHORIZED',
+    reconciliationId: '6618828829466685704953',
+    clientReferenceInformation: exports { code: 'TC50171_3' },
+    processorInformation: exports {
+      approvalCode: '831000',
+      transactionId: '016153570198200',
+      networkTransactionId: '016153570198200',
+      responseCode: '00',
+      responseDetails: 'ABC',
+      avs: [exports],
+      merchantAdvice: [exports],
+      consumerAuthenticationResponse: [exports],
+      systemTraceAuditNumber: '171900',
+      retrievalReferenceNumber: '224218171900'
+    },
+    paymentAccountInformation: exports { card: [exports] },
+    paymentInformation: exports { card: [exports], tokenizedCard: [exports] },
+    orderInformation: exports { amountDetails: [exports] }
+  }
+]

@@ -1,0 +1,31 @@
+//create_and_send_invoice_immediately
+
+Response Code of Create a New Invoice : 201
+exports {
+  id: '31',
+  submitTimeUtc: '2022-08-30T18:22:46.716Z',
+  status: 'SENT',
+  customerInformation: exports { name: 'wilmer' },
+  invoiceInformation: exports {
+    invoiceNumber: '31',
+    description: 'This is a test invoice',
+    dueDate: 2019-07-11T00:00:00.000Z,
+    allowPartialPayments: true,
+    paymentLink: 'https://ebctest.cybersource.com:443/ebc2/invoicing/payInvoice/HkUZrNRiU3jjvJurz8LkbBvZzb4J2TLKSmkeiXGORycbP5Zplhf2ymYXR8mzVltn?version=v2.1',
+    deliveryMode: 'Email'
+  },
+  orderInformation: exports {
+    amountDetails: exports {
+      totalAmount: '2623.64',
+      currency: 'USD',
+      balanceAmount: '2623.64',
+      discountAmount: '126.08',
+      discountPercent: 5,
+      subAmount: 2749.72,
+      minimumPartialAmount: 20,
+      taxDetails: [exports],
+      freight: [exports]
+    },
+    lineItems: [ [exports] ]
+  }
+}

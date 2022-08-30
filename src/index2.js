@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 const port = 3000;
-const credit_using_bluefin_pci_p2pe_with_visa_platform_connect = require('./Payments/Credit/credit-using-bluefin-pci-p2pe-with-visa-platform-connect.js');
+const credit = require('./Payments/Credit/credit.js');
 
 
 
@@ -23,7 +23,7 @@ const user1=Object.values(orderInformationBillTo);
 
 server.get('/', (req, res) => {
 	
-	credit_using_bluefin_pci_p2pe_with_visa_platform_connect(user1, function (err, data) {
+	credit( function (err, data) {
         
 		console.log(data);
 		res.send(data);

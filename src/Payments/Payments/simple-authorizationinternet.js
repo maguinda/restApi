@@ -2,7 +2,7 @@
 
 var cybersourceRestApi = require('cybersource-rest-client');
 var path = require('path');
-var filePath = path.resolve('Data/Configuration.js');
+var filePath = path.resolve('./src/Data/AlternativeConfiguration.js');
 var configuration = require(filePath);
 
 function simple_authorization_internet(callback, enable_capture) {
@@ -78,3 +78,8 @@ if (require.main === module) {
 	});
 }
 module.exports.simple_authorization_internet = simple_authorization_internet;
+
+//module.exports
+//module.exports = function (callback,enable_capture) {
+//	simple_authorization_internet(callback,enable_capture);
+//};

@@ -2,7 +2,7 @@
 
 var cybersourceRestApi = require('cybersource-rest-client');
 var path = require('path');
-var filePath = path.resolve('Data/Configuration.js');
+var filePath = path.resolve('./src/Data/AlternativeConfiguration.js');
 var configuration = require(filePath);
 var simple_authorization_internet = require('../Payments/simple-authorizationinternet');
 
@@ -59,4 +59,8 @@ if (require.main === module) {
 		console.log('\nCapturePayment end.');
 	});
 }
-module.exports.capture_payment = capture_payment;
+//module.exports.capture_payment = capture_payment;
+
+module.exports = function (callback) {
+	capture_payment(callback);
+};

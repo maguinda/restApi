@@ -2,7 +2,7 @@
 
 var cybersourceRestApi = require('cybersource-rest-client');
 var path = require('path');
-var filePath = path.resolve('Data/Configuration.js');
+var filePath = path.resolve('./src/Data/AlternativeConfiguration.js');
 var configuration = require(filePath);
 var simple_authorization_internet = require('../Payments/simple-authorizationinternet');
 
@@ -57,4 +57,8 @@ if (require.main === module) {
 		console.log('\nAuthReversal end.');
 	});
 }
-module.exports.process_authorization_reversal = process_authorization_reversal;
+//module.exports.process_authorization_reversal = process_authorization_reversal;
+
+module.exports = function (callback) {
+	process_authorization_reversal(callback);
+};

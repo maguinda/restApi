@@ -1,0 +1,25 @@
+//	One authorization reversal
+
+Response Code of Process a Payment : 201
+
+*************** Authorizarion Reversal *********************
+Payment ID passing to authReversal : 6618891936616770804951
+
+Data : {"_links":{"self":{"href":"/pts/v2/reversals/6618891945516771504951","method":"GET"}},
+       "id":"6618891945516771504951","submitTimeUtc":"2022-08-30T19:53:14Z","status":"REVERSED","reconciliationId":"6618891945516771504951",
+       "clientReferenceInformation":{"code":"TC50171_3"},"reversalAmountDetails":{"reversedAmount":"50.00","currency":"USD"},
+       "processorInformation":{"responseCode":"00"}}
+       
+Response Code of Process an Authorization Reversal : 201
+[
+  exports {
+    _links: exports { self: [exports] },
+    id: '6618885740496517404953',
+    submitTimeUtc: '2022-08-30T19:42:54Z',
+    status: 'REVERSED',
+    reconciliationId: '6618885740496517404953',
+    clientReferenceInformation: exports { code: 'TC50171_3' },
+    reversalAmountDetails: exports { reversedAmount: '50.00', currency: 'USD' },
+    processorInformation: exports { responseCode: '00' }
+  }
+]

@@ -1,0 +1,21 @@
+//capture_payment
+Response Code of Process a Payment : 201
+
+*************** Capture Payment *********************
+Payment ID passing to capturePayment : 6618893045796853004951
+
+Data : {"_links":{"self":{"href":"/pts/v2/captures/6618893054066029504953","method":"GET"},
+         "void":{"href":"/pts/v2/captures/6618893054066029504953/voids","method":"POST"}},"id":"6618893054066029504953","submitTimeUtc":"2022-08-30T19:55:05Z","status":"PENDING","reconciliationId":"6618893045796853004951",
+         "clientReferenceInformation":{"code":"TC50171_3"},"orderInformation":{"amountDetails":{"totalAmount":"50.00","currency":"USD"}}}
+Response Code of Capture a Payment : 201
+[
+  exports {
+    _links: exports { self: [exports], void: [exports] },
+    id: '6618886635706389504951',
+    submitTimeUtc: '2022-08-30T19:44:23Z',
+    status: 'PENDING',
+    reconciliationId: '6618886626266578504953',
+    clientReferenceInformation: exports { code: 'TC50171_3' },
+    orderInformation: exports { amountDetails: [exports] }
+  }
+]

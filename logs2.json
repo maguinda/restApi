@@ -1,0 +1,43 @@
+//get_invoice_details
+
+Response Code of Create a New Invoice : 201
+
+Data : {"id":"32","submitTimeUtc":"2022-08-30T18:40:14.609Z","status":"DRAFT",
+       "customerInformation":{"name":"Tanya Lee","email":"tanya.lee@my-email.world"},
+       "invoiceInformation":{"invoiceNumber":"32","description":"This is a test invoice","dueDate":"2019-07-11T00:00:00.000Z","allowPartialPayments":true,"deliveryMode":"None"},
+       "orderInformation":{"amountDetails":{"totalAmount":"2623.64","currency":"USD","balanceAmount":"2623.64","discountAmount":"126.08","discountPercent":5,"subAmount":2749.72,"minimumPartialAmount":20,
+                                            "taxDetails":{"type":"State Tax","amount":"208","rate":"8.25"},
+                                            "freight":{"amount":"20","taxable":true}},
+                          "lineItems":[{"productSku":"P653727383","productName":"First line item's name","quantity":21,"unitPrice":"120.08"}]},
+                          "invoiceHistory":[{"event":"DRAFT","date":"2022-08-30T18:40:14.067Z"}]
+      }
+
+Response Code of Get Invoice Details : 200
+exports {
+  id: '32',
+  submitTimeUtc: '2022-08-30T18:40:14.609Z',
+  status: 'DRAFT',
+  customerInformation: exports { name: 'Tanya Lee', email: 'tanya.lee@my-email.world' },
+  invoiceInformation: exports {
+    invoiceNumber: '32',
+    description: 'This is a test invoice',
+    dueDate: 2019-07-11T00:00:00.000Z,
+    allowPartialPayments: true,
+    deliveryMode: 'None'
+  },
+  orderInformation: exports {
+    amountDetails: exports {
+      totalAmount: '2623.64',
+      currency: 'USD',
+      balanceAmount: '2623.64',
+      discountAmount: '126.08',
+      discountPercent: 5,
+      subAmount: 2749.72,
+      minimumPartialAmount: 20,
+      taxDetails: [exports],
+      freight: [exports]
+    },
+    lineItems: [ [exports] ]
+  },
+  invoiceHistory: [ exports { event: 'DRAFT', date: 2022-08-30T18:40:14.067Z } ]
+}

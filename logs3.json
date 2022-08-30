@@ -1,0 +1,27 @@
+//Credit
+Response Code of Process a Credit : 201
+exports {
+  _links: exports {
+    self: exports {
+      href: '/pts/v2/credits/6618857065806493804953',
+      method: 'GET'
+    },
+    void: exports {
+      href: '/pts/v2/credits/6618857065806493804953/voids',
+      method: 'POST'
+    }
+  },
+  id: '6618857065806493804953',
+  submitTimeUtc: '2022-08-30T18:55:06Z',
+  status: 'PENDING',
+  reconciliationId: '6618857065806493804953',
+  clientReferenceInformation: exports { code: '12345678' },
+  creditAmountDetails: exports { creditAmount: '200.00', currency: 'usd' },
+  processorInformation: exports {
+    approvalCode: '831000',
+    responseCode: '00',
+    networkTransactionId: '016153570198200'
+  },
+  paymentInformation: exports {},
+  orderInformation: exports {}
+}
